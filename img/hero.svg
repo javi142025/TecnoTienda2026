@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title"><title id="title">Tienda Urbana — Diseño para tu día</title><defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#15192b"/><stop offset="1" stop-color="#070b13"/></linearGradient>
+<linearGradient id="shell" x2="1" y2=".8"><stop stop-color="#657082"/><stop offset=".45" stop-color="#303b4e"/><stop offset="1" stop-color="#141b2b"/></linearGradient>
+<linearGradient id="pocket" x2=".2" y2="1"><stop stop-color="#404e62"/><stop offset="1" stop-color="#1c2638"/></linearGradient>
+<linearGradient id="metal"><stop stop-color="#8293a9"/><stop offset=".35" stop-color="#eef5fb"/><stop offset=".6" stop-color="#65788b"/><stop offset="1" stop-color="#26374b"/></linearGradient>
+<linearGradient id="accent" x2="1" y2="1"><stop stop-color="#daff7f"/><stop offset="1" stop-color="#80c83b"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#7881ff" stop-opacity=".35"/><stop offset="1" stop-color="#7881ff" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+</defs><rect width="800" height="500" fill="url(#bg)"/><rect width="800" height="500" fill="url(#grid)"/><ellipse cx="515" cy="200" rx="370" ry="300" fill="url(#glow)"/><circle cx="637" cy="213" r="184" fill="#baf16a" fill-opacity=".07"/><circle cx="637" cy="213" r="166" fill="none" stroke="#baf16a" stroke-opacity=".3"/><path d="M44 46H62M53 37V55" stroke="#baf16a" stroke-width="2"/><text x="77" y="51" fill="#d9e0ee" font-family="Arial" font-size="11" letter-spacing="3">TIENDA URBANA</text><text x="46" y="163" fill="#f6f7fb" font-family="Arial" font-size="60" font-weight="700" letter-spacing="-2">TIENDA</text><text x="43" y="228" fill="#baf16a" font-family="Arial" font-size="60" font-weight="700" letter-spacing="-2">URBANA</text><path d="M48 258H105" stroke="#baf16a" stroke-width="3"/><text x="46" y="302" fill="#e6e8f1" font-family="Arial" font-size="24">Diseño para tu día</text><text x="48" y="453" fill="#aab6cc" font-family="Arial" font-size="10" letter-spacing="2">ACCESORIOS · TECNOLOGÍA · ESTILO</text><ellipse cx="598" cy="407" rx="148" ry="19" fill="#03060c" opacity=".7"/><g transform="translate(585 210) rotate(9) scale(.85)"><path d="M-91-104Q-145-54-119 125M91-104Q145-54 119 125" fill="none" stroke="#111926" stroke-width="26"/>
+<path d="M-32-125V-146Q0-171 32-146V-125" fill="none" stroke="#8995a4" stroke-width="11"/>
+<path d="M-111-77Q-106-130-49-137H49Q106-130 111-77L119 123Q116 153 84 158H-84Q-116 153-119 123Z" fill="url(#shell)" stroke="#8391a4" stroke-width="2"/>
+<path d="M-98-65Q-93-115-45-120H45Q93-115 98-65" fill="none" stroke="#151e2d" stroke-width="7"/>
+<path d="M-97-66Q-92-113-45-118H45Q92-113 97-66" fill="none" stroke="#a5b0bf" stroke-width="1.5"/>
+<rect x="-88" y="17" width="176" height="119" rx="22" fill="url(#pocket)" stroke="#607086"/>
+<path d="M-70 42H70" stroke="#121a27" stroke-width="7"/><path d="M-70 41H70" stroke="#9ba8b8" stroke-width="1"/>
+<rect x="56" y="41" width="7" height="21" rx="2" fill="url(#accent)"/>
+<path d="M-16-73H16V-40H-16Z" fill="#baf16a"/><path d="M-8-65V-49H8V-65" fill="none" stroke="#24351c" stroke-width="3"/>
+<path d="M-99 65V115M99 65V115" stroke="#a6b2c4" stroke-opacity=".35" stroke-width="2"/>
+<path d="M-67 122H67" stroke="#637087" stroke-dasharray="3 5"/></g><g transform="translate(476 340) rotate(-15) scale(.39)"><path d="M-119 29V-40A119 119 0 0 1 119-40V29" fill="none" stroke="#121b2b" stroke-width="38"/>
+<path d="M-119 22V-40A119 119 0 0 1 119-40V22" fill="none" stroke="#8592aa" stroke-width="28"/>
+<path d="M-119-14V-40A119 119 0 0 1 119-40V-14" fill="none" stroke="url(#shell)" stroke-width="23"/>
+<path d="M-102-73A106 106 0 0 1 102-73" fill="none" stroke="#baf16a" stroke-width="3"/>
+<path d="M-119-7V76M119-7V76" stroke="url(#metal)" stroke-width="15"/>
+<g transform="rotate(-12 -105 77)"><rect x="-148" y="5" width="78" height="146" rx="36" fill="#101625" stroke="#8391a4" stroke-width="2"/><rect x="-141" y="13" width="56" height="129" rx="27" fill="url(#shell)"/><path d="M-92 29V125" stroke="#baf16a" stroke-width="3"/><path d="M-116 61V87M-123 67V81M-109 67V81" stroke="#9da9bc" stroke-width="2"/></g>
+<g transform="rotate(12 105 77)"><rect x="70" y="5" width="78" height="146" rx="36" fill="#101625" stroke="#8391a4" stroke-width="2"/><rect x="85" y="13" width="56" height="129" rx="27" fill="url(#shell)"/><path d="M92 29V125" stroke="#baf16a" stroke-width="3"/><circle cx="116" cy="108" r="4" fill="#baf16a"/></g></g><g transform="translate(723 335) rotate(15) scale(.38)"><path d="M-44-166Q0-181 44-166L54-72H-54ZM-54 73H54L44 166Q0 181-44 166Z" fill="url(#accent)"/>
+<path d="M-30-165V-101M-15-169V-101M0-172V-101M15-169V-101M30-165V-101M-30 105V165M-15 105V169M0 105V171M15 105V169M30 105V165" stroke="#345c22" stroke-opacity=".25" stroke-width="3"/>
+<rect x="82" y="-39" width="15" height="29" rx="6" fill="url(#metal)"/>
+<rect x="-91" y="-102" width="182" height="207" rx="43" fill="url(#metal)"/>
+<rect x="-84" y="-95" width="168" height="193" rx="38" fill="#0b101b"/>
+<rect x="-76" y="-87" width="152" height="177" rx="32" fill="#111b2a"/>
+<text x="0" y="-50" fill="#c1e7a5" text-anchor="middle" font-family="Arial" font-size="10" letter-spacing="2">VIERNES 18</text>
+<text x="0" y="-8" fill="#f7fafc" text-anchor="middle" font-family="Arial" font-weight="700" font-size="41">09:41</text>
+<g transform="translate(0 43) rotate(-90)"><circle r="29" fill="none" stroke="#283749" stroke-width="7"/><circle r="29" fill="none" stroke="#baf16a" stroke-width="7" stroke-dasharray="145 183" stroke-linecap="round"/><circle r="18" fill="none" stroke="#283749" stroke-width="5"/><circle r="18" fill="none" stroke="#9393ff" stroke-width="5" stroke-dasharray="82 114" stroke-linecap="round"/></g><path d="M-55-78Q-3-99 59-65" fill="none" stroke="#fff" stroke-opacity=".13" stroke-width="2"/></g></svg>

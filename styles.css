@@ -1,0 +1,363 @@
+/* Paleta azul noche + verde lima, en sintonía con las ilustraciones. */
+:root {
+  color-scheme: dark;
+  --fondo: #0b1120;
+  --superficie: #151f33;
+  --texto: #f1f5fc;
+  --texto-suave: #b9c5d9;
+  --acento: #f98221;
+  --acento-hover: #f98221;
+  --borde: #34445f;
+  --sombra: 0 8px 26px rgba(0, 0, 0, .24);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+  line-height: 1.6;
+}
+
+.contenedor {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+header {
+  background: radial-gradient(ellipse at 50% 0%, #29375a 0%, transparent 70%), linear-gradient(135deg, #111a2e, #131d31);
+  color: var(--texto);
+  padding: 55px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1.05rem;
+  color: var(--texto-suave);
+}
+
+nav {
+  background: #10192b;
+  box-shadow: 0 1px 0 var(--borde), 0 8px 24px rgba(0, 0, 0, .2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 16px 0;
+}
+
+nav a {
+  color: var(--texto-suave);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .2s;
+}
+
+nav a:hover {
+  color: var(--acento);
+}
+
+.hero {
+  background: radial-gradient(ellipse at 85% 30%, rgba(120, 129, 255, .15), transparent 65%), linear-gradient(135deg, #111b2f, #0e1526);
+  padding: 70px 0;
+}
+
+.hero-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.hero-contenido > div {
+  flex: 1;
+}
+
+.hero h2 {
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  line-height: 1.15;
+  margin: 12px 0 18px;
+}
+
+.hero p {
+  color: var(--texto-suave);
+  max-width: 600px;
+  margin-bottom: 28px;
+}
+
+.hero img {
+  width: min(420px, 42%);
+  height: auto;
+}
+
+.etiqueta {
+  color: var(--acento);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.boton,
+button {
+  display: inline-block;
+  background: var(--acento);
+  color: #142016;
+  border: 0;
+  padding: 13px 23px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .2s, box-shadow .2s;
+}
+
+.boton:hover,
+button:hover {
+  background: var(--acento-hover);
+  box-shadow: 0 4px 22px rgba(186, 241, 106, .15);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--acento);
+  color: #142016;
+}
+
+.seccion {
+  padding: 75px 0;
+}
+
+.seccion h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.intro {
+  margin-bottom: 35px;
+  color: var(--texto-suave);
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background: var(--superficie);
+  border-radius: 14px;
+  overflow: hidden;
+  flex: 1 1 280px;
+  box-shadow: inset 0 0 0 1px var(--borde), var(--sombra);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-contenido {
+  padding: 22px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--texto-suave);
+  margin-bottom: 15px;
+}
+
+.card strong {
+  color: var(--acento);
+  font-size: 1.2rem;
+}
+
+.resenas-seccion {
+  background: #10192b;
+}
+
+.resenas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.resena {
+  background: var(--superficie);
+  box-shadow: inset 0 0 0 1px var(--borde);
+  padding: 28px;
+  border-radius: 12px;
+}
+
+.estrellas {
+  color: var(--acento);
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.resena h3 {
+  color: var(--texto-suave);
+  margin-top: 15px;
+  font-size: .95rem;
+}
+
+.contacto {
+  background: radial-gradient(ellipse at 15% 80%, rgba(120, 129, 255, .1), transparent 65%), linear-gradient(135deg, #10182a, #0b1120);
+}
+
+.contacto p {
+  color: var(--texto-suave);
+}
+
+.contacto strong,
+.contacto code {
+  color: var(--texto);
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: start;
+}
+
+.contacto-grid > div {
+  padding-top: 15px;
+}
+
+.contacto h2 {
+  margin: 10px 0 18px;
+}
+
+.contacto form {
+  background: var(--superficie);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: inset 0 0 0 1px var(--borde), var(--sombra);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #60718f;
+  background: #0e1627;
+  color: var(--texto);
+  caret-color: var(--acento);
+  border-radius: 7px;
+  font: inherit;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a7b5cc;
+  opacity: 1;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--acento);
+  border-color: transparent;
+}
+
+footer {
+  background: #070d18;
+  color: var(--texto-suave);
+  padding: 28px 0;
+}
+
+footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+footer a {
+  color: var(--acento);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--acento-hover);
+}
+
+@media (max-width: 800px) {
+  .hero-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: min(330px, 80%);
+  }
+
+  .resenas {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: .9rem;
+  }
+
+  .seccion {
+    padding: 55px 0;
+  }
+
+  footer .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Carrusel de seis productos: proporción original 800 × 500. */
+.coleccion-slider { margin-top: 48px; }
+.coleccion-slider h3 { font-size: 1.5rem; margin-bottom: 8px; }
+.slider-marco { position: relative; width: 100%; max-width: 800px; aspect-ratio: 8 / 5; margin-inline: auto; overflow: hidden; border-radius: 14px; background: #0a0e18; box-shadow: 0 0 0 1px var(--borde), var(--sombra); }
+.slider-marco iframe { position: absolute; inset: 0; display: block; width: 100%; height: 100%; border: 0; }

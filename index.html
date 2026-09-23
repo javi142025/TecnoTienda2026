@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10192b">
+  <meta name="description" content="Tienda Urbana: productos importados">
+  <title>TecnoTienda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="inicio">
+    <div class="contenedor">
+      <h1>TecnoTienda</h1>
+      <p>Lo mejor de la tecnologia en un solo lugar</p>
+    </div>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <div class="contenedor">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="contenedor hero-contenido">
+        <div>
+          <span class="etiqueta">NUEVA COLECCIÓN</span>
+          <h2>Encontrá tu próximo favorito</h2>
+          <p>Una selección de productos pensada para acompañarte con comodidad y personalidad.</p>
+          <a class="boton" href="#productos">Ver productos</a>
+        </div>
+        <img src="img/hero.svg" alt="Ilustración de productos de la tienda">
+      </div>
+    </section>
+
+    <section id="productos" class="seccion">
+      <div class="contenedor">
+        <h2>Productos</h2>
+        <p class="intro">Conocé algunos de nuestros productos destacados.</p>
+
+        <div class="productos">
+          <article class="card">
+            <img src="img/producto1.svg" alt="Mochila urbana">
+            <div class="card-contenido">
+              <h3>Mochila Urbana</h3>
+              <p>Diseño práctico, moderno y resistente para todos los días.</p>
+              <strong>$45.000</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/producto2.svg" alt="Auriculares inalámbricos">
+            <div class="card-contenido">
+              <h3>Auriculares Pro</h3>
+              <p>Sonido envolvente y comodidad para disfrutar tu música.</p>
+              <strong>$38.500</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/producto3.svg" alt="Reloj inteligente">
+            <div class="card-contenido">
+              <h3>Smart Watch</h3>
+              <p>Un compañero inteligente para organizar tu rutina.</p>
+              <strong>$62.000</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="coleccion-slider">
+          <h3>Más productos para descubrir</h3>
+          <p class="intro">Explorá nuestra selección de tecnología y accesorios.</p>
+          <div class="slider-marco">
+            <iframe src="slider-productos/slider.html" title="Carrusel de seis productos de Tienda Urbana" width="800" height="500" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resenas" class="seccion resenas-seccion">
+      <div class="contenedor">
+        <h2>Reseñas</h2>
+        <div class="resenas">
+          <article class="resena">
+            <div class="estrellas">★★★★★</div>
+            <p>“Excelente atención y productos de muy buena calidad. Volvería a comprar.”</p>
+            <h3>— Martina</h3>
+          </article>
+          <article class="resena">
+            <div class="estrellas">★★★★★</div>
+            <p>“La compra fue rápida y el producto llegó perfecto. Muy recomendable.”</p>
+            <h3>— Nicolás</h3>
+          </article>
+          <article class="resena">
+            <div class="estrellas">★★★★☆</div>
+            <p>“Muy buen diseño y relación precio-calidad. La experiencia fue muy buena.”</p>
+            <h3>— Camila</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion contacto">
+      <div class="contenedor contacto-grid">
+        <div>
+          <span class="etiqueta">CONTACTANOS</span>
+          <h2>¿Tenés alguna consulta?</h2>
+          <p>Completá el formulario y recibiremos tu mensaje directamente.</p>
+          <p><strong>Importante:</strong> para que Formspree procese el formulario, reemplazá el identificador de ejemplo en el atributo <code>action</code> por tu endpoint personal.</p>
+        </div>
+
+        <form action="https://formspree.io/f/mdeknryv" method="POST">
+          <input type="text" name="nombre" placeholder="Ingrese nombre" aria-label="Nombre" required>
+          <input type="email" name="email" placeholder="Ingrese su mail" aria-label="Correo electrónico" required>
+          <textarea name="mensaje" placeholder="Su mensaje" aria-label="Mensaje" required></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2026 Tienda Urbana. Proyecto de Pre-Entrega HTML y CSS.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

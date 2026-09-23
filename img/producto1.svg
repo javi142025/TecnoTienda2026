@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title"><title id="title">MOCHILA URBANA</title><defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#15192b"/><stop offset="1" stop-color="#070b13"/></linearGradient>
+<linearGradient id="shell" x2="1" y2=".8"><stop stop-color="#657082"/><stop offset=".45" stop-color="#303b4e"/><stop offset="1" stop-color="#141b2b"/></linearGradient>
+<linearGradient id="pocket" x2=".2" y2="1"><stop stop-color="#404e62"/><stop offset="1" stop-color="#1c2638"/></linearGradient>
+<linearGradient id="metal"><stop stop-color="#8293a9"/><stop offset=".35" stop-color="#eef5fb"/><stop offset=".6" stop-color="#65788b"/><stop offset="1" stop-color="#26374b"/></linearGradient>
+<linearGradient id="accent" x2="1" y2="1"><stop stop-color="#daff7f"/><stop offset="1" stop-color="#80c83b"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#7881ff" stop-opacity=".35"/><stop offset="1" stop-color="#7881ff" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+</defs><rect width="800" height="500" fill="url(#bg)"/><rect width="800" height="500" fill="url(#grid)"/><ellipse cx="515" cy="200" rx="370" ry="300" fill="url(#glow)"/><circle cx="425" cy="214" r="165" fill="none" stroke="#baf16a" stroke-opacity=".14"/><circle cx="425" cy="214" r="180" fill="none" stroke="#fff" stroke-opacity=".06"/><path d="M44 47H62M53 38V56" stroke="#baf16a" stroke-width="2"/><text x="77" y="52" fill="#c3cbd9" font-family="Arial" font-size="11" letter-spacing="3">TIENDA URBANA</text><text x="748" y="64" text-anchor="end" fill="#baf16a" font-family="Arial" font-size="30">01</text><ellipse cx="419" cy="377" rx="139" ry="17" fill="#03060d" opacity=".7"/><g transform="translate(417 217) rotate(-9) scale(.88)"><path d="M-91-104Q-145-54-119 125M91-104Q145-54 119 125" fill="none" stroke="#111926" stroke-width="26"/>
+<path d="M-32-125V-146Q0-171 32-146V-125" fill="none" stroke="#8995a4" stroke-width="11"/>
+<path d="M-111-77Q-106-130-49-137H49Q106-130 111-77L119 123Q116 153 84 158H-84Q-116 153-119 123Z" fill="url(#shell)" stroke="#8391a4" stroke-width="2"/>
+<path d="M-98-65Q-93-115-45-120H45Q93-115 98-65" fill="none" stroke="#151e2d" stroke-width="7"/>
+<path d="M-97-66Q-92-113-45-118H45Q92-113 97-66" fill="none" stroke="#a5b0bf" stroke-width="1.5"/>
+<rect x="-88" y="17" width="176" height="119" rx="22" fill="url(#pocket)" stroke="#607086"/>
+<path d="M-70 42H70" stroke="#121a27" stroke-width="7"/><path d="M-70 41H70" stroke="#9ba8b8" stroke-width="1"/>
+<rect x="56" y="41" width="7" height="21" rx="2" fill="url(#accent)"/>
+<path d="M-16-73H16V-40H-16Z" fill="#baf16a"/><path d="M-8-65V-49H8V-65" fill="none" stroke="#24351c" stroke-width="3"/>
+<path d="M-99 65V115M99 65V115" stroke="#a6b2c4" stroke-opacity=".35" stroke-width="2"/>
+<path d="M-67 122H67" stroke="#637087" stroke-dasharray="3 5"/></g><path d="M48 408H752" stroke="#fff" stroke-opacity=".15"/><text x="48" y="451" fill="#f6f7fb" font-family="Arial" font-size="29" font-weight="700" letter-spacing="1">MOCHILA</text><text x="49" y="477" fill="#baf16a" font-family="Arial" font-size="12" letter-spacing="4">URBANA</text><circle cx="725" cy="450" r="22" fill="#baf16a"/><path d="M717 458L733 442M719 442H733V456" fill="none" stroke="#192420" stroke-width="2"/></svg>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Productos · Tienda Urbana</title><style>
+*{box-sizing:border-box}body{margin:0;background:transparent}.tu-slider{position:relative;width:100%;max-width:800px;aspect-ratio:8/5;overflow:hidden;background:#0a0e18;color:#fff;font-family:Arial,sans-serif;margin:auto}.tu-slider img{display:block;width:100%;height:100%;object-fit:contain}.tu-slider img[hidden]{display:none}.tu-slider button{cursor:pointer;color:#eaf0f7;background:#151e30dd;border:1px solid #ffffff30;display:grid;place-items:center}.tu-slider button:hover{background:#baf16a;color:#111827}.tu-slider button:focus-visible{outline:3px solid #baf16a;outline-offset:3px}.tu-prev,.tu-next{position:absolute;top:42%;width:clamp(30px,5vw,40px);height:clamp(36px,6vw,48px);border-radius:12px;font-size:24px}.tu-prev{left:2%}.tu-next{right:2%}.tu-controls{position:absolute;bottom:21%;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center}.tu-slider .tu-dot{width:9px;height:9px;padding:0;border-radius:50%;border:0;background:#69768b}.tu-slider .tu-dot[aria-current=true]{background:#baf16a;width:23px;border-radius:6px}.tu-slider .tu-pause{width:27px;height:27px;border-radius:50%;font-size:12px;margin-left:6px}.tu-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+</style></head><body><section class="tu-slider" role="region" aria-roledescription="carrusel" aria-label="Productos Tienda Urbana" tabindex="0">
+<img src="productos/auriculares.svg" alt="Auriculares — WIRELESS" width="800" height="500">
+<img src="productos/parlante.svg" alt="Parlante portátil — SOUND" width="800" height="500" hidden>
+<img src="productos/camara.svg" alt="Cámara digital — CAPTURE" width="800" height="500" hidden>
+<img src="productos/gamepad.svg" alt="Control gamer — PLAY" width="800" height="500" hidden>
+<img src="productos/earbuds.svg" alt="Auriculares in-ear — AIR" width="800" height="500" hidden>
+<img src="productos/teclado.svg" alt="Teclado mecánico — KEYS" width="800" height="500" hidden>
+<button class="tu-prev" aria-label="Producto anterior">‹</button><button class="tu-next" aria-label="Producto siguiente">›</button><div class="tu-controls"></div><span class="tu-status" aria-live="polite"></span></section>
+<script>
+(()=>{const root=document.querySelector('.tu-slider'),slides=[...root.querySelectorAll('img')],controls=root.querySelector('.tu-controls'),status=root.querySelector('.tu-status');let current=0,timer,hover=false,focused=false,paused=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const dots=slides.map((img,i)=>{const b=document.createElement('button');b.className='tu-dot';b.setAttribute('aria-label','Ver '+img.alt);b.addEventListener('click',()=>{show(i,true);schedule()});controls.append(b);return b});
+const pause=document.createElement('button');pause.className='tu-pause';controls.append(pause);
+function show(i,announce=false){current=(i+slides.length)%slides.length;slides.forEach((s,j)=>s.hidden=j!==current);dots.forEach((b,j)=>b.setAttribute('aria-current',String(j===current)));if(announce)status.textContent=(current+1)+' de '+slides.length+': '+slides[current].alt}
+function schedule(){clearInterval(timer);if(!paused&&!hover&&!focused&&!document.hidden)timer=setInterval(()=>show(current+1),4500)}
+function setPause(){pause.textContent=paused?'▶':'Ⅱ';pause.setAttribute('aria-label',paused?'Reproducir carrusel':'Pausar carrusel');schedule()}
+pause.addEventListener('click',()=>{paused=!paused;setPause()});
+root.querySelector('.tu-prev').onclick=()=>{show(current-1,true);schedule()};root.querySelector('.tu-next').onclick=()=>{show(current+1,true);schedule()};
+root.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();show(current+(e.key==='ArrowRight'?1:-1),true);schedule()}});
+root.addEventListener('mouseenter',()=>{hover=true;schedule()});root.addEventListener('mouseleave',()=>{hover=false;schedule()});root.addEventListener('focusin',()=>{focused=true;schedule()});root.addEventListener('focusout',e=>{if(!root.contains(e.relatedTarget)){focused=false;schedule()}});document.addEventListener('visibilitychange',schedule);
+let x=null,y=null;root.addEventListener('touchstart',e=>{x=e.changedTouches[0].clientX;y=e.changedTouches[0].clientY},{passive:true});root.addEventListener('touchend',e=>{if(x===null)return;const dx=e.changedTouches[0].clientX-x,dy=e.changedTouches[0].clientY-y;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){show(current+(dx<0?1:-1),true);schedule()}x=null},{passive:true});show(0);setPause();})();
+</script></body></html>
