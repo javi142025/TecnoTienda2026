@@ -3,9 +3,6 @@
 ## Propósito
 Este proyecto es una página web demostrativa para una tienda de productos urbanos. Incluye una presentación, catálogo de productos, reseñas de clientes y formulario de contacto.
 
-## Cómo abrirlo
-Descomprimí el ZIP y abrí `index.html` en tu navegador. También podés usar Live Server en VS Code. Para publicarlo, subí el contenido completo manteniendo las carpetas.
-
 ## Slider integrado
 Debajo de los tres productos originales aparece un carrusel con seis ilustraciones SVG nuevas de 800 × 500 px. Se adapta al ancho disponible sin deformar las imágenes.
 
